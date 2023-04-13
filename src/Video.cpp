@@ -413,7 +413,7 @@ LoadSurfaceFromPath(const char *ApplicationPath, const char *SurfaceName)
 #if __WIN32__
   sprintf(SurfacePath, "%s%s%s", ApplicationPath, "Assets\\Graphics\\", SurfaceName);
 #else // Linux
-  sprintf(SurfacePath, "%s%s%s", ApplicationPath, "Assets\\Graphics/", SurfaceName);
+  sprintf(SurfacePath, "%s%s%s", ApplicationPath, "Assets/Graphics/", SurfaceName);
 #endif // __WIN32__
 
   Surface = IMG_Load(SurfacePath);
