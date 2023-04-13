@@ -564,7 +564,7 @@ Game::DrawBaseStatus(VideoDriver *Video)
 }
 
 void
-Game::DrawBaseStatusEnemy(VideoDriver *Video, const Base *TargetBase)
+Game::DrawBaseStatusEnemy(VideoDriver *Video, const Base *TargetBase)
 {
   int WindowWidth, WindowHeight;
   size_t LongestString = 0;
@@ -657,7 +657,7 @@ Game::DrawBaseStatusEnemy(VideoDriver *Video, const Base *TargetBase)
 
       DrawStatusRect(Video, (FONT_WIDTH * strlen(Buffer)) + 8, 20, LocX, LocY);
 
-      Video->DrawStr(Buffer, LocX + 4, LocY + 4, 1.0);
+      Video->DrawStr(Buffer, LocX + 4, LocY + 4, 1.0);
     }
   }
 }
