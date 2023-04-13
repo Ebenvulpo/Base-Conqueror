@@ -1,0 +1,296 @@
++---------------------------------------------------------------------------+
+|                                   Base                                    |
+|                                Conqueror's                                |
+|                                  Manual                                   |
++---------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------+
+| Table of Contents                                                         |
++---------------------------------------------------------------------------+
+
+ 1: Introduction
+ 2: System Requirements
+ 3: Controls
+   3.1: Hotkeys
+   3.2: Mouse Controls
+ 4: Game Mechinics
+   4.1: The World of Contenia
+   4.2: Base Size
+   4.3: Uncaptured Bases
+   4.4: Attacking Bases
+   4.5: Linked Bases
+   4.6: The Player's Home Base
+   4.7: Attacking Base Formula
+   4.8: Linked Base Formula
+   4.9: Difficulty Levels
+   4.10: Score System
+ 5: Strageties
+   5.1: Defending Linked Bases
+   5.2: When to Attack Other Players
+   5.3: The Patrolling Method
+
++---------------------------------------------------------------------------+
+| 1: Introduction                                                           |
++---------------------------------------------------------------------------+
+
+    Base Conqueror is a real-time strategy game set in the now anarchic and
+chaotic place of Contenia.  Three of the closest generals of the emperor did
+a military coup against their now former emperor, and have split the former
+empire into four parts.  Where each part is now at war with one another for
+complete control of Contenia.  And you, General Peacekeeper, who was the last
+loyal general of the emperor, will now go and reunite the empire to its form-
+er glory.  Starting with your only single base, you will start restoring or-
+der to the nearby bases around you and soon begin the fight against your
+former comrades, to see which one of you will dominate Contenia and become
+the new emperor.
+
++---------------------------------------------------------------------------+
+| 2: System Requirements                                                    |
++---------------------------------------------------------------------------+
+
+    Should run on any Windows system on or after Windows 7.  The only minimal
+requirement is that you need to have a monitor capable of doing at least a
+resolution of 1366x768 and a keyboard and mouse in order to play this game.
+
++---------------------------------------------------------------------------+
+| 3: Controls                                                               |
++---------------------------------------------------------------------------+
+
+-|3.1: Hotkeys|--------------------------------------------------------------
+
+A  : Find a nearby enamy base.
+S  : Goto your home base.
+F  : Unlink base from the selected base.
+G  : Turn grid on/off.
+W  : Unselected base.
+ESC: Options Menu.
+F1 : Score window.
+
+-|3.2: Mouse Controls|-------------------------------------------------------
+
+To scroll around the world, hold down on the left mouse button.
+
+    To select one of your bases, hover the mouse cursor over one of your
+bases and press the right mouse button.  To unselected your selected base,
+hover the mouse cursor again over the selected base and press the right
+mouse button.
+
+    To link a base with the mouse cursor, first select a base, then go to the
+desired base you wish to link with and press down on the right mouse button.
+To unlinked a base, select the base that is linking to another base, then go
+to the destination base and press down on the right mouse button to unlinked
+them.
+
+    To attack an enamy base, first select a base, then go to the enemy base
+you wish to attack, and press down on the right mouse button to start at-
+tacking the enemy base.  To cancel an attack against an enemy base, select
+the base that is attacking the enemy base, then go to the enemy base and
+press the right mouse button to cancel the attack.
+
++---------------------------------------------------------------------------+
+| 4: Game Mechanics                                                         |
++---------------------------------------------------------------------------+
+
+-|4.1: The World of Contenia|------------------------------------------------
+
+    The world of Contenia is a procedural generated world with the size of
+96x96 tiles, filled with water, grassplanes, forests, hills, mountains, and
+of course, most importantly, bases to capture and to conquer from other play-
+ers.  All of the worlds procedural generated always have 64 bases to conquer
+by the players.  The last player standing is the winner.  And if you are the
+winner, then you will be promtped by a victory window showing all the play-
+er's scores before exiting to the game's main menu.  Or if you lose your last
+base, then you will be promtped by a defeat window, which also shows all the
+player's socres before exiting to the game's main menu.
+
+-|4.2: Base Size|------------------------------------------------------------
+
+    Base size determines how many soldiers are produce every 10 seconds.  If
+a base has a size of 2, then it will produce 2 soldiers every 10 seconds.  Or
+if a base has a size of 8, it will also produce 8 soldiers every 10 seconds.
+
+Note: the minimum number of soldiers that a base has to have in order to do
+an action, both to capture, and to attack a base, is 10 soldiers.  But you
+can still link to other bases with bases that have under 10 soldiers.
+
+-|4.3: Uncaptured Bases|-----------------------------------------------------
+
+    An uncaptured base is a base that is owned by nobody.  Capturing an un-
+occupied base will cost 5 soldiers.  The maximum distance a base can be cap-
+tured is 24 tiles.
+
+-|4.4: Attacking Bases|------------------------------------------------------
+
+    Attacking bases is where soldiers from one base attacks an enamy base.
+A 16-sided dice roll is done for both the attack modifiers and the defense
+modifiers that can have a terrain bonus.  Distance also plays a part in how
+many soldiers can be effectively attacking a base.  Further the base being
+attacked, slower will be the soldiers attacking that base.  The maximum per-
+centage of soldiers attacking an enemy base per second is 100 percent, and
+the minimum number of soldiers attacking per second is 25 percent.  The max-
+imum distance a base can be attacked is 24 tiles.  The attacking effective-
+ness is displayed by the distance on the enemy's base status highlight from
+the selected base.
+
+Note: in order to attack a base, the selected base must be an unlinked base.
+Also when an attacking base goes below 10 soldiers, the base will automatic-
+ally stop attacking the enemy's base.
+
+-|4.5: Linked Bases|---------------------------------------------------------
+
+    When a base is linked to another base, soldiers will move from their pre-
+sent base to the linked base.  The maximum number of soldiers that can move
+to a linked base per second is 25 percent of the soldiers stationed at their
+present base.  And the minimum number of soldiers that can move to a linked
+base per second is 5 percent of the soldiers stationed at their present base.
+The maximum distance a base can be linked is 24 tiles.  The moving effect-
+iveness is display by the distance on the owner's base status highlight from
+the selected base.
+
+Note: A base can only link to one base at a time.
+
+-|4.6: The Player's Home Base|-----------------------------------------------
+
+    When a new game is started, the player's starting base will be the play-
+er's home base.  If the player's home base is lost due to another player con-
+queroring it from the player, then the game will find the largest sized base
+that the player owns, and makes that base the player's new home base.
+
+-|4.7: Attacking Base Formula|-----------------------------------------------
+
+The formula for calculating effectiveness of the attack/defense is:
+
+  Defense Modifiers
+  ----------------- =
+  Attack Modifiers
+
+  4 + (Dice Roll: 1-16) + Terrain Modifier
+  ---------------------------------------- = The ratio of attacking soldiers
+           4 + (Dice Roll: 1-16)             to kill the number of defensive
+                                             soldiers.
+
+  Terrain Modifiers for a defensive base can be (depending what the base is
+built on):
+
+  +-------------------+
+  | Terrian Modifiers |
+  +-------------------+
+  | Grassplan : 0     |
+  | Forest    : 4     |
+  | Hill      : 6     |
+  | Mountain  : 10    |
+  +-------------------+
+
+  Distance is also plays a factor in how many soldiers can be attacking a
+base effectively at once.  The formula for how many soldiers can be at-
+tacking is:
+
+  If the distance is less than 6 tiles, then there is no distance penalty.
+  If the distance is greater than 6 tiles, then the distance penalty is:
+    Distance = 1 - (0.04166 * (Distance to base - 6)).
+
+  Thus with the above formulas, a base with 100 soldiers attacking a base 14
+tiles away with an attack roll of 12 and a defensive roll of 8 with terrain
+bonus of 4 (forest) is:
+
+ Defense Modifiers   4 + 8 + 4   16
+ ----------------- = --------- = -- = 1 = Ratio of attacking soldiers to kill
+ Attack Modifiers     4 + 12     16       defensive soldiers.
+
+
+And for the number of soldiers attacking per second:
+
+ Soldiers * Distance = 100 * (1 - (0.0416 * (Distance to base - 6))) =
+
+ 100 * 0.6672 = 66.72 = Number of soldiers that will be attacking per second.
+
+-|4.8: Linked Base Formula|--------------------------------------------------
+
+The formula for linked bases is:
+
+  Soliders * Distance = Number of soldiers that can move to the linked base
+                        per second.
+
+And for the distance calculation:
+
+  If the distance to the linked base is less than 6, then there is no dis-
+  tance penalty.
+  If the distance to the linked base is greater than 6, then the distance
+  penalty is:
+    Distance = .25 - (0.0111 * (Distance to base - 6)).
+
+  Thus the above formula can be calculated with a base that has 25 soldiers
+that will move soldiers to a linked base with a distance of 14 tiles away
+is:
+
+  Soldiers * Distance =
+
+  25 * (.25 - (0.0111 * (Distance to base - 6))) =
+
+  25 * 0.1612 =
+
+  4.03 = Number of soldiers that will move to the linked base per second.
+
+-|4.9: Difficulty Levels|----------------------------------------------------
+
++---------------------------------------------+
+| Difficulty Level Modification Values        |
++---------------------------------------------+
+| Very Easy : -50% AI Soldiers Production     |
+| Easy      : -25% AI Soldiers Production     |
+| Normal    : Some as the Player's Production |
+| Hard      : +15% AI Soldiers Production     |
+| Very Hard : +30% AI Soldiers Production     |
++---------------------------------------------+
+
+-|4.10: Score System|--------------------------------------------------------
+
++----------------------------------------------+
+| Score Values                                 |
++----------------------------------------------+
+| Taking an Uncaptured Base         : 1 Point  |
+| Successfully Defending a Base     : 1 Point  |
+| Conqueroring a Base From a Player : 3 Points |
++----------------------------------------------+
+
++---------------------------------------------------------------------------+
+| 5: Strategies                                                             |
++---------------------------------------------------------------------------+
+
+-|5.1: Defending Linked Bases|-----------------------------------------------
+
+    If you have a base linked with another base and one of the AI players is
+within attacking distance of that base, then the AI player is more likely to
+attack that base.  Since it might have too few soldiers to defend against an
+attack.  Therefore, it is wise to make sure there are no players nearby the
+linked base or you have enough other bases linked to it, and when an AI play-
+er attacks the base it will be not a problem.
+
+-|5.2: When to Attack Other Players|-----------------------------------------
+
+    Like above with protecting your bases against other players, you can use
+the same strategy against the AI players when they have their bases linked to
+other bases that are within your attacking distance.  But be careful when to
+attack, though.  If you capture an AI player's linked base, they might soon
+do a counter-attack against that base and recapture or successfully defend it
+from you.
+
+    Another thing you can do is when an AI player fails to conquer one of
+your bases, you can try to do a counter-attack against the AI player's base
+that attacked your base.  Since it will most likely have very few soldiers
+from the failed attack against your base, and probably an easy take if there
+are not too many base linking to it.
+
+-|5.3: The Patrolling Method|------------------------------------------------
+
+    One method you can try to defends some of your bases is with the patrol-
+ling method.  The patrolling method is done by linking some bases together to
+form a loop where soldiers move around in a circle from one base to another.
+This is usually helps with the smaller sized bases, since they will have more
+soldiers to defend against an attack, since they cannot produce very many
+soldiers on their own.
+
+Note: The main disadvantage of the patrolling method, depending on your point
+-of-view, is that the AI players will be more likely to attack the bases in
+the loop.  Since they see them as linked bases and vulnerable to be conquer-
+ed.
