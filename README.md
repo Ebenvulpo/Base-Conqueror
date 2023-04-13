@@ -1,5 +1,5 @@
 # Base-Conqueror
-A real-time strategy game that I made and released on itch.io years ago. Note: I am no longer developing this, so do not send me any patchs or requests please.
+A real-time strategy game that I made and released on itch.io years ago. Note: I am no longer developing this, so do not send me any patches or requests please.
 
 ## Dependencies
 ```
