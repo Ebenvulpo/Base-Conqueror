@@ -274,7 +274,7 @@ World::DiamondStep(const int X, const int Y, std::minstd_rand &Rand)
 
   Height = (Weight / 4.0) + ((Rand() % 1000) / 500.0);
   Type = GetTileTypeFromHeight(Height);
-  if(Type == TileType::Grassplane) {
+  if(Type == TileType::Grassland) {
     if(Rand() % WORLDGEN_CHANCE_FOR_FOREST_TILE ==  0) { Type = TileType::Forest; }
   }
 
@@ -455,7 +455,7 @@ World::SquareStep(const int X,
 
   Height = (Weight / Average) + ((Rand() % 1000) / 500.0);
   Type = GetTileTypeFromHeight(Height);
-  if(Type == TileType::Grassplane) {
+  if(Type == TileType::Grassland) {
     if(Rand() % WORLDGEN_CHANCE_FOR_FOREST_TILE == 0) { Type = TileType::Forest; }
   }
 
@@ -468,7 +468,7 @@ TileType
 World::TileProbablity(const unsigned int Value)
 {
   if(Value < 64)                   { return TileType::Water; }
-  if(Value >= 64 && Value < 512)   { return TileType::Grassplane; }
+  if(Value >= 64 && Value < 512)   { return TileType::Grassland; }
   if(Value >= 512 && Value < 768)  { return TileType::Hill; }
   if(Value >= 768 && Value < 1024) { return TileType::Mountain; }
 

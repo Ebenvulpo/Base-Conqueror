@@ -27,7 +27,7 @@ int
 Tile::GetDefenseValue(void) const
 {
   switch(Type) {
-  case TileType::Grassplane:
+  case TileType::Grassland:
     return 0;
   case TileType::Forest:
     return 4;
@@ -66,7 +66,7 @@ Tile::GetHeightValue(void) const
   switch(Type) {
   case TileType::Water:
     return 0;
-  case TileType::Grassplane:
+  case TileType::Grassland:
   case TileType::Forest:
     return 1;
   case TileType::Hill:
@@ -87,7 +87,7 @@ TileType GetTileTypeFromHeight(const int Height)
   case 0:
     return TileType::Water;
   case 1:
-    return TileType::Grassplane;
+    return TileType::Grassland;
   case 2:
     return TileType::Hill;
   default:

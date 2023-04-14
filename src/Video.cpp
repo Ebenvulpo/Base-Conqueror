@@ -91,7 +91,7 @@ VideoDriver::DrawBox(const int Width,
 }
 
 void
-VideoDriver::DrawCursor(const int X, const int Y)
+VideoDriver::DrawCursor(const int X, const int Y)
 {
   SDL_Rect Dest;
 
@@ -306,7 +306,7 @@ VideoDriver::LoadTextures(const char *ApplicationPath)
   static const char *TileNames[] = {
     "Base.png",
     "Forest.png",
-    "Grassplane.png",
+    "Grassland.png",
     "Hill.png",
     "Mountain.png",
     "BlackHighlight.png",

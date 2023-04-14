@@ -26,7 +26,7 @@ class Tile;
 enum class TileType {
   Base,
   Forest,
-  Grassplane,
+  Grassland,
   Hill,
   Mountain,
   BlackHighlight,

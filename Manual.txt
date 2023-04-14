@@ -94,7 +94,7 @@ press the right mouse button to cancel the attack.
 -|4.1: The World of Contenia|------------------------------------------------
 
     The world of Contenia is a procedural generated world with the size of
-96x96 tiles, filled with water, grassplanes, forests, hills, mountains, and
+96x96 tiles, filled with water, grasslands, forests, hills, mountains, and
 of course, most importantly, bases to capture and to conquer from other play-
 ers.  All of the worlds procedural generated always have 64 bases to conquer
 by the players.  The last player standing is the winner.  And if you are the
@@ -175,7 +175,7 @@ built on):
   +-------------------+
   | Terrian Modifiers |
   +-------------------+
-  | Grassplan : 0     |
+  | Grassland : 0     |
   | Forest    : 4     |
   | Hill      : 6     |
   | Mountain  : 10    |
